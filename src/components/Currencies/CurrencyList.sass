@@ -17,6 +17,20 @@
             padding: 4px 7px
             cursor: pointer
             transition: all .35s ease-in-out
+            span
+                position: relative
+                &::after
+                    position: absolute
+                    left: calc(100% + 7px)
+
+            &.item-ascending
+                span
+                    &::after
+                        content: "\21E1"
+            &.item-descending
+                span
+                    &::after
+                        content: "\21E3"
             &:hover
                 background: black
                 color: white
