@@ -1,0 +1,42 @@
+.currencies-list
+    display: flex
+    flex-direction: column
+    max-width: 640px
+    margin: 0 auto
+
+    .currencies-list-header
+        display: flex
+        border: 1px solid black
+        justify-content: space-around
+
+        .item
+            border-right: 1px solid black
+            width: 100%
+            text-align: center
+            font-size: 18px
+            padding: 4px 7px
+            cursor: pointer
+            transition: all .35s ease-in-out
+            &:hover
+                background: black
+                color: white
+
+            &:last-child
+                border-right: none
+
+.currencies-list-content-row
+    display: flex
+    border-left: 1px solid black
+    border-right: 1px solid black
+    border-bottom: 1px solid black
+    justify-content: space-around
+
+    .item
+        border-right: 1px solid black
+        width: 100%
+        text-align: center
+        font-size: 16px
+        padding: 4px 5px
+
+        &:last-child
+            border-right: none
