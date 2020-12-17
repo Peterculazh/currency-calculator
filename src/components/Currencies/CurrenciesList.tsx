@@ -24,7 +24,7 @@ const CurrenciesList = (
     const sort = useSelector((state: RootState) => state.currencies.sort);
 
     const sortBy = (field: string) => {
-        let sortDirection = 1;
+        let sortDirection = -1;
         if (sort.field === field) {
             switch (sort.sort) {
                 case -1:
