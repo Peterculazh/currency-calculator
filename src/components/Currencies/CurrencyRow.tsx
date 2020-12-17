@@ -12,4 +12,4 @@ const CurrenciesRow = ({ currency }: { currency: ICurrency }) => {
 }
 
 
-export default CurrenciesRow;
+export default React.memo(CurrenciesRow);
