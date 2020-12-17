@@ -1,0 +1,42 @@
+.calculator
+    display: flex
+    justify-content: space-around
+    margin-top: 35px
+
+    &-item
+        display: flex
+        align-items: center
+
+        strong
+            margin-right: 12px
+            font-size: 32px
+
+        input
+            padding: 4px 7px
+            border: none
+            border-radius: 6px
+            transition: all 0.35s ease-in-out
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75)
+            outline: none
+
+            &:focus
+                box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75)
+
+    &-button
+        border: none
+        background: none
+        outline: none
+        display: flex
+        text-align: center
+        align-items: center
+        padding: 5px 12px
+        transition: all .35s ease-in-out
+        background: rgb(87, 147, 242)
+        cursor: pointer
+        &:hover
+            background: rgb(17, 104, 245)
+            color: white
+
+        &:after
+            content: "↹"
+            font-size: 32px
